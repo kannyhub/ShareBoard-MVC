@@ -1,0 +1,161 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'Open Sans',
+    sans-serif;
+}
+img{
+    display: block;
+    width: 100%;
+}
+.section{
+    max-width:1440px;
+    width: 100%;
+    margin: auto;
+}
+.padding-top{
+    padding-top: 70px;
+}
+.padding-bottom {
+    padding-bottom: 70px;
+}
+.container{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position:relative
+}
+.background-color-main::before{
+    content: '';
+    position: absolute;
+    height: calc(800px - 509px);
+    width: 100%;
+    background-color: #1E7BF6;
+    z-index: -1;
+    top: 0px;
+}
+.form-heading {
+    max-width: 510px;
+    margin: auto;
+    width: 100%;
+    margin-bottom: 30px;
+}
+.form-heading h3 {
+    color: #0E3B75;
+    font-size: 3.2rem;
+    line-height: 3.8rem;
+    font-weight: 700;
+    padding-top: 30px;
+}
+form.container{
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+    max-width: 510px;
+    margin: auto;
+}
+form.container label {
+    font-size: 1.4rem;
+    font-weight: 600;
+    line-height: 1.3rem;
+    text-align: left;
+    text-transform: uppercase;
+    color: #0E3B75;
+}
+form.container input {
+    font-size: 1.5rem;
+    font-weight: 500;
+    line-height: 1.8rem;
+    letter-spacing: 0px;
+    text-align: left;
+    padding: 20px;
+    width: 100%;
+    color: #0E3B75;
+    border: 1px solid #0E3B7559;
+}
+form.container input::placeholder{
+        font-size: 1.5rem;
+        font-weight: 500;
+        line-height: 1.8rem;
+        letter-spacing: 0px;
+        color: #23497a91;
+}
+form.container input:focus-visible{
+    outline:none;
+    box-shadow: none;
+}
+.form-forget-link {
+    padding: 30px 0px;
+}
+.form-forget-link a {
+    font-size: 1.4rem;
+    font-weight: 400;
+    line-height: 1.6rem;
+    letter-spacing: 0px;
+    text-align: center;
+    text-decoration: none;
+    color: #0E3B7599;
+    transition: 0.5s ease-in-out;
+}
+.form-forget-link a:hover{
+    color: #1E7BF6;
+}
+.display-block{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    max-width: 510px;
+    margin: auto;
+}
+button.btn {
+    padding: 20px;
+    width: 390px;
+    margin: auto;
+    font-size: 1.7rem;
+    line-height: 0.25rem;
+    font-weight: 700;
+    border: 2px solid #1E7BF6;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+.log-in-btn{
+    background-color: #1E7BF6;
+    color: #fff;
+
+}
+.log-in-btn:hover{
+    background-color: #fff;
+    color:#1E7BF6;
+}
+.Sign-up-btn {
+    background-color: #fff;
+    color:#1E7BF6 ;
+}
+.Sign-up-btn:hover{
+    background-color: #1E7BF6;
+    color: #fff;
+}
+@media screen and (max-width:767px) {
+    .section{
+        padding-left: 30px;
+        padding-right: 30px;
+    }
+    .padding-top{
+        padding-top: 50px;
+    }
+    .padding-bottom{
+        padding-bottom: 50px;
+        
+    }
+    button.btn{
+        width: 100%;
+    }
+}
